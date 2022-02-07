@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.config.ts --mode production",
-    "dev": "npx cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.config.ts "
+    "dev": "npx cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.config.ts ",
+    "gh-deploy": "npm run build && git add dist -f && git commit -m 'dist subtree commit' && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
@@ -48,7 +49,8 @@
     "webpack-dev-server": "^4.7.2"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "mkcvs": "^1.0.19"
   },
   "browserslist": [
     "last 2 version",

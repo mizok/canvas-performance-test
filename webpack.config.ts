@@ -195,6 +195,7 @@ const config:webpack.Configuration = {
     ]
   },
   resolve: {
+    extensions:['.tsx','.ts','.js'],
     alias: {
       '@img': resolve(__dirname, './src/assets/images/'),
       '@font': resolve(__dirname, './src/assets/fonts/')

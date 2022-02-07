@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#composition{
+  height: 100%;
+  canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
