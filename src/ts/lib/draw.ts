@@ -19,6 +19,7 @@ export class A extends CtxRendering{
    
   }
   draw(){
+    this.ctx.clearRect(0,0,this.cvs.width,this.cvs.height);
     this.ctx.arc(
       this.loc.x,
       this.loc.y,
@@ -54,6 +55,7 @@ export class B{
     this.cvs.height = window.innerHeight;
   }
   draw(){
+    this.ctx.clearRect(0,0,this.cvs.width,this.cvs.height);
     this.ctx.arc(
       this.loc.x,
       this.loc.y,
